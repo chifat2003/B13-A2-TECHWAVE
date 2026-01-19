@@ -4,13 +4,12 @@
     font-size: 16px;
     font-family: inter;
 }
-
+/* navbar */
 header{
     background-color: #412567;
     color: white;
     margin: 0px;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -51,4 +50,91 @@ a{
 }
 .btn:hover{
     background: linear-gradient(47.64deg, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
+}
+
+/* hero-section */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+.hero-circle{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 24%;
+    width: 24%;
+}
+.microphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/hero-circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+}
+
+.microphone-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+#new{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #00FF88;
+    color: rgb(0, 0, 0);
+    padding: 4px 8px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.hero-text{
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+}
+.hero-text h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 16px;
+
+}
+.btn-primary{
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    color: white;
+    padding: 12.5px 16px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-secondery{
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    padding: 12.5px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
 }
