@@ -43,6 +43,7 @@ a {
     margin-bottom: 30px;
 }
 
+
 .btn {
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     color: white;
@@ -59,6 +60,127 @@ a {
 .btn:hover {
     background: linear-gradient(47.64deg, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1), rgba(247, 233, 63, 1));
 }
+
+/* help form ai */
+
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon - hidden by default */
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    z-index: 1001;
+}
+
+.hamburger-icon span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+ul {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    height: 2rem;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    color: white;
+    border: none;
+    padding: 12.5px 16px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-right: 200px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(47.64deg, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1), rgba(247, 233, 63, 1));
+}
+
+
+@media (max-width: 576px) {
+    #logo {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 1.5rem;
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 70px);
+        background-color: #412567;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 0;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        align-items: stretch;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    li {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+        margin: 30px 20px 0 20px;
+        width: calc(100% - 40px);
+    }
+}
+
+/* help form ai */
 
 /* hero-section */
 .hero-section {
@@ -442,6 +564,9 @@ a {
 }
 .social-media{
     height: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
 .social-media img{
     padding: 10px;
@@ -512,6 +637,24 @@ footer p{
 }
 
 @media (max-width: 576px) {
+    .hero-circle {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70%;
+    width: 70%;
+}
+    .card-podcast{
+        display: grid;
+        padding: auto 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .card{
+        width: auto;
+    }
     .grid-section {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -574,7 +717,6 @@ footer p{
         height: 150px;
         margin-bottom: 20px;
     }
-
     .card-host-content h2 {
         font-size: 1.5rem;
         margin-bottom: 15px;
@@ -583,9 +725,30 @@ footer p{
     .card-host-content p {
         font-size: 0.9rem;
     }
+    .social-media{
+        gap: 10px;
 
+    }
     .social-media img {
         width: 20px;
         height: 20px;
+        gap: 10px;
     }
+
+    .footer-img{
+    margin: 80px 110px 24px 110px;
+    max-width: 220px;
+}
+
+footer{
+    background-image: url("./assets/footer-bg.png");
+    background-position: center;
+    background-size:auto;
+    display: grid;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+
 }
