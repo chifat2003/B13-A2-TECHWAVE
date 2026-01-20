@@ -516,12 +516,14 @@ a {
 .cardwithvideo span img {
     margin-right: 8px;
 }
+
 /* host */
-#meet-the-host-id{
+#meet-the-host-id {
     padding: 120px 10%;
     background-color: #1A0B2E;
 }
-.meet-the-host{
+
+.meet-the-host {
     padding: 40px auto;
     background-color: #1A0B2E;
     display: flex;
@@ -530,52 +532,61 @@ a {
     justify-content: center;
     max-height: 280px;
 }
-.meet-the-host h1{
+
+.meet-the-host h1 {
     font-size: 3rem;
     color: #FFFFFF;
 }
-.meet-the-host h2{
+
+.meet-the-host h2 {
     font-size: 2rem;
     color: #FFFFFF;
     padding-bottom: 16px;
 }
-.meet-the-host p{
+
+.meet-the-host p {
     font-size: 1rem;
     color: #FFFFFF;
     opacity: 0.5;
     padding-bottom: 12px;
 }
-.card-host{
+
+.card-host {
     background-color: #412567;
     display: flex;
     padding: 40px;
     border-radius: 15px;
 
 }
-.card-host img{
+
+.card-host img {
     margin-right: 40px;
 }
-.card-host-content{
+
+.card-host-content {
     display: flex;
 }
-.card-host div{
+
+.card-host div {
     flex-direction: column;
     justify-content: center;
 }
-.social-media{
+
+.social-media {
     height: 40px;
-    display: grid;
+
     grid-template-columns: repeat(4, 1fr);
 
 }
-.social-media img{
+
+.social-media img {
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    
+
 }
 
-footer{
+footer {
     background-image: url("./assets/footer-bg.png");
     background-position: center;
     background-size: cover;
@@ -587,10 +598,11 @@ footer{
 
 
 }
-footer img{
-    padding-top: 80px;
+
+footer img {
     margin-bottom: 24px;
 }
+
 .footer {
     display: flex;
     align-items: center;
@@ -608,7 +620,8 @@ span {
     margin-top: 12px;
     margin-bottom: 24px;
 }
-footer p{
+
+footer p {
     text-align: center;
     color: #FFFFFF;
 }
@@ -638,23 +651,26 @@ footer p{
 
 @media (max-width: 576px) {
     .hero-circle {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 70%;
-    width: 70%;
-}
-    .card-podcast{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 70%;
+        width: 70%;
+    }
+
+    .card-podcast {
         display: grid;
         padding: auto 20px;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    .card{
+
+    .card {
         width: auto;
     }
+
     .grid-section {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -693,15 +709,20 @@ footer p{
     }
 
     .featured-section-card {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-}
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
     .meet-the-host {
         padding: 60px 20px;
     }
 
-    .meet-the-host  h2 {
+    .meet-the-host h1 {
+        padding: 20px;
+    }
+
+    .meet-the-host h2 {
         font-size: 2rem;
         margin-bottom: 30px;
     }
@@ -717,6 +738,7 @@ footer p{
         height: 150px;
         margin-bottom: 20px;
     }
+
     .card-host-content h2 {
         font-size: 1.5rem;
         margin-bottom: 15px;
@@ -725,30 +747,41 @@ footer p{
     .card-host-content p {
         font-size: 0.9rem;
     }
-    .social-media{
+
+    .social-media {
         gap: 10px;
+        display: grid;
 
     }
+
     .social-media img {
         width: 20px;
         height: 20px;
         gap: 10px;
     }
 
-    .footer-img{
-    margin: 80px 110px 24px 110px;
-    max-width: 220px;
-}
+    .footer-img {
+        max-width: 220px;
+    }
 
-footer{
-    background-image: url("./assets/footer-bg.png");
-    background-position: center;
-    background-size:auto;
-    display: grid;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-
+    footer {
+        background-image: url("./assets/footer-bg.png");
+        background-position: center;
+        background-size: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 120px;
+        align-items: center;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .footer span{
+        padding: 0px;
+        text-align: center;
+    }
 }
