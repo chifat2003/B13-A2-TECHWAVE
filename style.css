@@ -1,43 +1,50 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-size: 16px;
     font-family: inter;
 }
+
 /* navbar */
-header{
+header {
     background-color: #412567;
     color: white;
     margin: 0px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-ul{
+
+ul {
     display: flex;
     gap: 32px;
 }
-li{
+
+li {
     list-style: none;
     display: inline;
     font-size: 1rem;
     gap: 32px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
-    
+
 }
-#logo{
+
+#logo {
     height: 2rem;
-    margin-left: 200px;
+    margin-left: 10%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.btn{
-    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+
+.btn {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     color: white;
     border: none;
     padding: 12.5px 16px;
@@ -48,12 +55,13 @@ a{
     margin-bottom: 24px;
     cursor: pointer;
 }
-.btn:hover{
-    background: linear-gradient(47.64deg, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
+
+.btn:hover {
+    background: linear-gradient(47.64deg, rgba(145, 0, 248, 1), rgba(251, 9, 180, 1), rgba(247, 233, 63, 1));
 }
 
 /* hero-section */
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +70,8 @@ a{
     background-position: center;
     background-size: cover;
 }
-.hero-circle{
+
+.hero-circle {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -71,7 +80,8 @@ a{
     height: 24%;
     width: 24%;
 }
-.microphone{
+
+.microphone {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,13 +93,14 @@ a{
     height: 350px;
 }
 
-.microphone-img{
+.microphone-img {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50%;
 }
-#new{
+
+#new {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -100,17 +111,20 @@ a{
     font-size: 0.8rem;
     font-weight: 600;
 }
-.hero-text{
+
+.hero-text {
     margin-top: 24px;
     text-align: center;
     color: white;
 }
-.hero-text h1{
+
+.hero-text h1 {
     font-size: 4rem;
     font-weight: 800;
     margin-top: 40px;
 }
-.hero-buttons{
+
+.hero-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,8 +133,9 @@ a{
     gap: 16px;
 
 }
-.btn-primary{
-    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+
+.btn-primary {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     color: white;
     padding: 12.5px 16px;
     border-radius: 30px;
@@ -129,7 +144,7 @@ a{
     border: none;
 }
 
-.btn-secondery{
+.btn-secondery {
     background: transparent;
     border: 1px solid #00FF88;
     color: #00FF88;
@@ -138,8 +153,9 @@ a{
     font-size: 1rem;
     cursor: pointer;
 }
+
 /* podcast */
-.Podcast-info{
+.Podcast-info {
     margin: auto;
     padding: 120px 0px;
     text-align: center;
@@ -148,34 +164,38 @@ a{
     flex-direction: column;
     background-color: #1A0B2E;
 }
-.podcast-description{
+
+.podcast-description {
     text-align: center;
     justify-content: center;
     padding: 0px 20%;
 
 }
-.Podcast-info h2{
+
+.Podcast-info h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 16px;
     color: white;
 }
-.Podcast-info p{
+
+.Podcast-info p {
     font-size: 1rem;
     color: #FFFFFF;
     font-weight: 400;
     padding-bottom: 40px;
 }
-.Podcast-info hr{
+
+.Podcast-info hr {
     border: 0.5px solid #FFFFFF;
     width: 80%;
     justify-content: center;
     align-items: center;
-    margin:  auto;
+    margin: auto;
     opacity: 0.1;
 }
 
-.card-podcast{
+.card-podcast {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,18 +204,152 @@ a{
     margin-top: 40px;
 
 }
-.card{
+
+.card {
     width: 240px;
     text-align: center;
 }
-.card-title{
+
+.card-title {
     font-size: 3rem;
     font-weight: 900;
     color: #00FF88;
     margin-bottom: 8px;
 }
-.card-description{
+
+.card-description {
     font-size: 1rem;
     color: #FFFFFF;
     font-weight: 400;
 }
+
+/* grid-section */
+.grid-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: #250E3D;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    gap: 30px; 
+    align-items: start; 
+    justify-content: center;
+    margin: 0 auto; 
+    width: 75%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.grid-row{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.grid-item1{
+    border-radius: 20px;
+    background-color: #3B1E55;
+    padding: 110px 40px;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.grid-header{
+font-size: 3rem;
+font-weight: 700;
+padding: 40px;
+color: #FFFFFF;
+}
+.grid-item2{
+    border-radius: 20px;
+    background-color: #3B1E55;
+    padding: 40px;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-card img {
+    width: 60px;
+    height: 60px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.grid-item1 h3, .grid-item2 h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+}
+.grid-item1 p, .grid-item2 p {
+                font-size: 1rem;
+                font-weight: 400;
+                opacity: 0.6;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+    gap: 30px; 
+    align-items: start; 
+    justify-content: center;
+    margin: 0 auto; 
+    width: 75%;
+    margin: auto;
+
+}
+
+@media (min-width: 1440px) {
+        .grid-item1{
+    padding: 120px 40px;
+    
+}}
+@media (max-width: 576px) {
+            .grid-section {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .grid-header {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+            
+            .grid-container-1, 
+            .grid-container2{
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 90%;
+                gap: 20px;
+            }
+            
+            .grid-item1,
+            .grid-item2 {
+                padding: 30px 20px;
+                font-size: 1rem;
+            }
+
+            .grid-item1 h3,
+            .grid-item2 h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .grid-item1 p, .grid-item2 p {
+                font-size: 1rem;
+                font-weight: 400;
+                opacity: 0.6;
+}
+        }
+
+
+
